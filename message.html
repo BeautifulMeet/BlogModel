@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>个人博客模板古典系列之——江南墨卷</title>
+<meta name="keywords" content="个人博客模板古典系列之——江南墨卷" />
+<meta name="description" content="个人博客模板古典系列之——江南墨卷" />
+<link href="css/base.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/message.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
+</head>
+<body >
+
+<div id="wrapper">
+  <header>
+    <div class="headtop"></div>
+    <div class="contenttop">
+      <div class="logo f_l">个人博客模板古典系列之——江南墨卷</div>
+      <div class="search f_r">
+      </div>
+      <div class="blank"></div>
+      <nav>
+        <div  class="navigation">
+          <ul class="menu">
+            <li><a href="index.html">网站首页</a></li>
+            <li><a href="#">关于我</a>
+              <ul>
+                <li><a href="about.html">个人简介</a></li>
+                <li><a href="listpic.html">作品展览</a></li>
+              </ul>
+            </li>
+            <li><a href="#">我的日记</a>
+              <ul>
+                <li><a href="newslistpic.html">生活笔记</a></li>
+                <li><a href="newslistpic.html">技术文章</a></li>
+              </ul>
+            </li>
+            <li><a href="newslistpic.html">生活随感</a> </li>
+            <li><a href="message.html">给我留言</a> </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <div class="con_content">
+      <div class="about_box">
+        <h2 class="nh1"><span>您现在的位置是：<a href="/" target="_blank">网站首页</a>>><a href="#" target="_blank">给我留言</a></span><b>留言板</b></h2>
+
+		<span>
+			<img src="./images/login.png" class="loginImg" /><a class="noLogin">登录</a>
+		</span>
+			<!-- 发送留言区 -->
+			<div class="send_message">
+				<textarea placeholder="有事没事聊两句..." id="saytext"></textarea>
+			</div>
+			
+			<!-- 留言按钮 表情 图片上传 确定 -->
+			<div class="div_btn">
+				<img src="./images/expression.png" class="expression" id="expression" onclick="showExpression()" onmouseover="onmouseOver()"  onmouseout="mouseOut()"/>
+				<img src="./images/LeavingAMessage.png" class="btn_message" id="writeMsg" onmouseover="btnOnmouseOver()"  onmouseout="btnMouseOut()"/>
+			</div>
+		
+		
+		<!-- 留言列表 -->
+		<div class="msgList">
+			<div>
+				<div style="position: absolute;left: 38px;"><b>留言</b></div>
+				<div style="float:right;"><b>3888</b>人参与评论，<b>6888</b>条留言</div>
+			</div>
+			<div>
+				<hr style="width: 100%;position: absolute;top:38px;border: solid 1px;">
+			<div style="height: 100px;">
+				<b style="position: absolute;top: 60px;">对Chen说点什么吧...</b>
+			</div>
+
+			
+			<!-- 留言信息----start -->
+			<div class="message_box">
+				<div class="imgHead">
+					<img src="./images/headImg.jpg" />
+				</div>
+				<div class="msgInfo">
+					<div style="margin-top: 20px;font-size:18px;">
+						<span><font style="color:#171717;">李白</font>[福建省厦门市网友]</span>
+					<div>
+					<br/>
+					<div>
+						<font class="msg_content_font">我想知道大哥哥做这个博客花了多久啊？我也是学技术的，我打算自己也搞一个博客，跪求大神们的建议</font>
+					</div>
+					<br/><br/>
+					<div style="height:40px;">
+						<span style="float:right;">
+							<font style="cursor: pointer;">回复</font> &nbsp; 
+							<img id="zan" style="display:inline;cursor: pointer;position:relative;top:5px;" src="./images/zan.png" onclick="dianZan()"/> 1
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+					<!-- 回复留言区 -->
+		<div class="reply_Msg">			
+			<div class="reply_message">
+				<textarea placeholder="有事没事聊两句..." id="saytext"></textarea>
+			</div>
+			
+			<!-- 留言按钮 表情 图片上传 确定 -->
+			<div class="reply_div_btn">
+				<img src="./images/expression.png" class="reply_expression" id="expression" onclick="showExpression()" onmouseover="onmouseOver()"  onmouseout="mouseOut()"/>
+				<img src="./images/LeavingAMessage.png" class="reply_btn_message" id="writeMsg" onmouseover="btnOnmouseOver()"  onmouseout="btnMouseOut()"/>
+			</div>
+		</div>	
+					<!-- 回复留言区 ---结束 -->
+			
+			
+			
+			
+			<!-- 留言信息----end -->
+			
+						<!-- 留言信息----start -->
+			<div class="message_box">
+				<div class="imgHead">
+					<img src="./images/headImg.jpg" />
+				</div>
+				<div class="msgInfo">
+					<div style="margin-top: 20px;font-size:18px;">
+						<span><font style="color:#171717;">李白</font>[福建省厦门市网友]</span>
+					<div>
+					<br/>
+					<div>
+						<font class="msg_content_font">我想知道大哥哥做这个博客花了多久啊？我也是学技术的，我打算自己也搞一个博客，跪求大神们的建议</font>
+					</div>
+					<br/><br/>
+					<div style="height:40px;">
+						<span style="float:right;">
+							<font style="cursor: pointer;">回复</font> &nbsp; 
+							<img id="zan" style="display:inline;cursor: pointer;position:relative;top:5px;" src="./images/zan.png" onclick="dianZan()"/> 1
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+			<!-- 留言信息----end -->
+			
+			
+		</div>
+		
+      </div>
+    </div>
+    <div class="blank"></div>
+  </div>
+  <!-- container代码 结束 -->
+  
+ 
+</div>
+ <footer>
+    <div class="footer" >
+      <div class="f_l">
+        <p>All Rights Reserved 版权所有：<a href="http://www.yangqq.com">杨青个人博客</a> 备案号：蜀ICP备00000000号</p>
+      </div>
+      <div class="f_r textr">
+        <p>Design by DanceSmile</p>
+      </div>
+    </div>
+  </footer>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.qqFace.js"></script>
+<script>
+	// Navigation Menu
+	$(function() {
+		$(".menu ul").css({display: "none"}); // Opera Fix
+		$(".menu li").hover(function(){
+			$(this).find('ul:first').css({visibility: "visible",display: "none"}).slideDown("normal");
+		},function(){
+			$(this).find('ul:first').css({visibility: "hidden"});
+		});
+	});
+	<!-- 点赞 -->
+	function dianZan(){
+		$("#zan").attr('src','images/zan2.png'); 
+	}
+	<!--  表情鼠标移动事件 -->
+	function onmouseOver(){
+		$("#expression").attr('src','images/expression2.png'); 
+	}
+	function mouseOut(){
+		$("#expression").attr('src','images/expression.png'); 
+	}
+	
+	
+	<!--  点击图片鼠标移动事件 -->
+	function btnOnmouseOver(){
+		$("#writeMsg").attr('src','images/LeavingAMessage2.png'); 
+	}
+	function btnMouseOut(){
+		$("#writeMsg").attr('src','images/LeavingAMessage.png'); 
+	}
+	
+	<!-- 显示或者关闭表情区域 -->
+	function showExpression(){
+
+	}
+	
+	<!-- QQ表情 -->
+	$('.expression').qqFace({
+		id : 'facebox', 
+		assign:'saytext', 
+		path:'arclist/'	//表情存放的路径
+	});
+	$(".sub_btn").click(function(){
+
+		var str = $("#saytext").val();
+
+		$("#show").html(replace_em(str));
+
+	});
+	//查看结果
+	function replace_em(str){
+		str = str.replace(/\</g,'&lt;');
+		str = str.replace(/\>/g,'&gt;');
+		str = str.replace(/\n/g,'<br/>');
+		str = str.replace(/\[em_([0-9]*)\]/g,'<img src="arclist/$1.gif" border="0" />');
+		return str;
+	}
+	<!-- OVER QQ 表情 -->
+	
+	function imgUpload(){
+		document.getElementsById["fileUpload"][0].click();
+	}
+</script>
+</html>
